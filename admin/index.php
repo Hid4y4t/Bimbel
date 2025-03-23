@@ -149,9 +149,7 @@ if (!isset($_SESSION['admin_id'])) {
         <a href="?page=jadwal-bimbel" class="menu-item">
             <i class="fas fa-calendar-alt"></i> <span>Jadwal Bimbel</span>
         </a>
-        <a href="?page=registrasi" class="menu-item">
-            <i class="fas fa-clipboard-list"></i> <span>Registrasi</span>
-        </a>
+       
         <a href="logout.php" class="menu-item" id="logout">
             <i class="fas fa-sign-out-alt"></i> <span>Log Out</span>
         </a>
