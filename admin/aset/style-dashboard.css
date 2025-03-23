@@ -1,0 +1,150 @@
+.page-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 99%;
+    max-width: calc(100% - 10px);
+    margin-top: 20px;
+}
+
+.data-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(25% - 40px);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.data-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 2em;
+    margin-right: 20px;
+    color: #007bff;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text .jumlah-data {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .data-card {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .data-card {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* grafik */
+
+.grf-batang button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.grf-batang {
+    text-align: center;
+}
+
+.grafik h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grafik {
+    width: 96%;
+    max-width: calc(100% - 40px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.grf-batang {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .grafik {
+        flex-direction: column;
+    }
+}
+
+#programTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#programTable thead tr {
+    background-color: rgb(34, 138, 138);
+    color: #ffffff;
+    text-align: center;
+}
+
+#programTable th,
+#programTable td {
+    padding: 12px 15px;
+}
+
+#programTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#programTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#programTable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#programTable tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+#barChart,
+#programTable_wrapper {
+    display: none;
+}

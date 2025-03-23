@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(237, 248, 254);
+}
+
+.sidebar {
+    width: 200px;
+    background-color: rgb(220, 240, 252);
+    color: rgb(24, 24, 24);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.sidebar .logo img {
+    width: 40%;
+}
+
+.sidebar a {
+    color: rgb(86, 86, 86);
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+    margin: 0;
+    border-radius: 8px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.sidebar a:hover {
+    background-color: rgba(75, 115, 236, 0.8);
+    color: rgb(255, 255, 255);
+}
+
+.menu-item {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.menu-item:hover {
+    background-color: #575757;
+}
+
+.content {
+    flex-grow: 1;
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 50px;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar a {
+        padding: 10px;
+        text-align: center;
+    }
+    .sidebar a span {
+        display: none;
+    }
+    .sidebar .logo img {
+        width: 50%;
+    }
+    .content {
+        margin-left: 10px;
+        width: calc(100% - 60px);
+        padding: 5px;
+    }
+}
